@@ -1,0 +1,33 @@
+public class Televisao {
+	// informacoes sobre uma TV
+	String  marca;
+	int     voltagem;
+	int     tamanho;
+	boolean ligada;
+	int     volume;
+	int     canal;
+	
+	void switchPower() {
+		ligada = !ligada;
+		System.out.println("A TV "+marca+" está "+ ((ligada)?"ligada":"desligada"));
+		// operador ternario de atribuicao condicional
+		/*
+		 *   (testeLogico)? <ValorSeTesteForVerdadeiro> : <ValorSeTesteForFalso>
+		 *   
+		 */
+	}
+	
+	void aumentarVolume() {
+		volume++;
+		System.out.println("A TV "+marca+" está no volume "+volume);
+	}
+	
+	void diminuirVolume() {
+		volume--;
+		System.out.println("A TV "+marca+" está no volume "+volume);
+	}
+	
+	
+	
+
+}
